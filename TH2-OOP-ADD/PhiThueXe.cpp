@@ -1,7 +1,5 @@
 #include "PhiThueXe.h"
 
-
-
 PhiThueXe::PhiThueXe()
 {
 }

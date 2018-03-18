@@ -1,5 +1,4 @@
-#pragma once
-#include "Date.h"
+#include "include.h"
 class PhiThueXe
 {
 private:
