@@ -29,6 +29,5 @@ void GiaTienTaiKhoangDuong::setGia(int x)
 
 void GiaTienTaiKhoangDuong::xuat()
 {
-	cout << "Xuat theo dinh dang:\n\t\Gia thue, tu km, den km" << endl;
-	cout << "\t" << gia << ", " << tuKm << ", " << denKm << endl;
+	cout << "\t" << tuKm << " -> " << denKm << " : " << gia << endl;
 }

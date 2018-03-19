@@ -18,11 +18,24 @@ void GiaTienTheoKhoangDuong::nhap()
 	ds = new GiaTienTaiKhoangDuong[soLuong];
 	for (int i = 0, kmTu, kmDen, gia; i < soLuong; i++)
 	{
-		cout << "Nhap km tu, km den va gia cua khoang chia thu " << i + 1 << ": ";
-		cin >> kmTu >> kmDen >> gia;
-		cin.ignore();
+		int flag = 0;
+		do {
+			if (flag)
+				cout << "Gia tri khong hop le, nhap lai: ";
+			else
+				cout << "Nhap km tu, km den va gia cua khoang chia thu " << i + 1 << ": ";
+			cin >> kmTu >> kmDen >> gia;
+			cin.ignore();
+		} while (kmDen - kmTu <= 0 || gia <= 0);
 		ds[i].setDenKm(kmDen);
 		ds[i].setTuKm(kmTu);
 		ds[i].setGia(gia);
 	}
+}
+
+void GiaTienTheoKhoangDuong::xuat()
+{
+	cout << "Xuat gia tien theo quang duong voi dinh dang:\n\t km tu -> km den : gia" << endl;
+	for (int i = 0; i < soLuong; i++)
+		ds[i].xuat();
 }
