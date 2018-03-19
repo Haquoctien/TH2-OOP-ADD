@@ -14,16 +14,14 @@ PhiThueXe::PhiThueXe(const PhiThueXe &other)
 	this->loaiXe = other.loaiXe;
 	this->tuKm = other.tuKm;
 	this->denKm = other.denKm;
-	this->giaTien = other.giaTien;
+	this->gia = other.gia;
 }
 
 void PhiThueXe::nhap()
 {
 	cout << "Nhap loai xe: ";
 	getline(cin, loaiXe);
-	cout << "Nhap lan luot gia, tu km, den km";
-	cin >> giaTien >> tuKm >> denKm;
-	cin.ignore();
+	gia.nhap();
 }
 
 void PhiThueXe::nhap(DanhSachLoaiXe ds)
@@ -38,14 +36,13 @@ void PhiThueXe::nhap(DanhSachLoaiXe ds)
 		flag++;
 	} while (!ds.isIn(loaiXe));
 	cout << "Nhap lan luot gia, tu km, den km";
-	cin >> giaTien >> tuKm >> denKm;
-	cin.ignore();
+	gia.nhap();
 }
 
-void PhiThueXe::xuat() const
+void PhiThueXe::xuat()
 {
-	cout << "Xuat theo dinh dang:\n\tLoai xe, phi thue, tu km, den km" << endl;
-	cout << "\t" << loaiXe << ", " << giaTien << ", " << tuKm << ", " << denKm << endl;
+	cout << loaiXe;
+	gia.xuat();
 }
 
 string PhiThueXe::getLoaiXe() const
@@ -63,7 +60,7 @@ int PhiThueXe::getDenKm() const
 	return denKm;
 }
 
-int PhiThueXe::getGiaTien() const
+GiaTienTheoKhoangDuong PhiThueXe::getGia() const
 {
-	return giaTien;
+	return gia;
 }

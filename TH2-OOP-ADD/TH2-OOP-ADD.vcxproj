@@ -115,11 +115,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BangGiaPhiBocXep.h" />
+    <ClInclude Include="BangGiaPhiThueXe.h" />
+    <ClInclude Include="DanhSachLoaiXe.h" />
     <ClInclude Include="Date.h" />
+    <ClInclude Include="GiaTienTaiKhoangDuong.h" />
+    <ClInclude Include="GiaTienTheoKhoangDuong.h" />
     <ClInclude Include="include.h" />
+    <ClInclude Include="PhiBocXep.h" />
+    <ClInclude Include="PhiThueXe.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BangGiaPhiBocXep.cpp" />
+    <ClCompile Include="BangGiaPhiThueXe.cpp" />
+    <ClCompile Include="DanhSachLoaiXe.cpp" />
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="GiaTienTaiKhoangDuong.cpp" />
+    <ClCompile Include="GiaTienTheoKhoangDuong.cpp" />
+    <ClCompile Include="PhiBocXep.cpp" />
+    <ClCompile Include="PhiThueXe.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

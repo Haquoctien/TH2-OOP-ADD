@@ -1,21 +1,20 @@
 #include "include.h"
 #include "DanhSachLoaiXe.h"
+#include "GiaTienTheoKhoangDuong.h"
 // TODO: cai dat lai lop nay de chia gia ra thanh tung chang
 class PhiThueXe
 {
 private:
 	string loaiXe;
-	int tuKm, denKm, giaTien;
+	GiaTienTheoKhoangDuong gia;
 public:
 	PhiThueXe();
 	~PhiThueXe();
 	PhiThueXe(const PhiThueXe&);
 	void nhap();
 	void nhap(DanhSachLoaiXe ds);
-	void xuat() const;
+	void xuat();
 	string getLoaiXe() const;
-	int getTuKM() const;
-	int getDenKm() const;
-	int getGiaTien() const;
+	GiaTienTheoKhoangDuong getGia() const;
 };
 

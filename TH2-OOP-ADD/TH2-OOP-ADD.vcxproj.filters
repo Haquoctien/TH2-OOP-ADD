@@ -21,9 +21,51 @@
     <ClInclude Include="include.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PhiThueXe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhiBocXep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BangGiaPhiThueXe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BangGiaPhiBocXep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DanhSachLoaiXe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GiaTienTaiKhoangDuong.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GiaTienTheoKhoangDuong.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhiThueXe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhiBocXep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BangGiaPhiThueXe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BangGiaPhiBocXep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DanhSachLoaiXe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GiaTienTaiKhoangDuong.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GiaTienTheoKhoangDuong.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
