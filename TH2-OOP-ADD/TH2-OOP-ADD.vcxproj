@@ -134,6 +134,7 @@
     <ClCompile Include="GiaTienTheoKhoangDuong.cpp" />
     <ClCompile Include="PhiBocXep.cpp" />
     <ClCompile Include="PhiThueXe.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
