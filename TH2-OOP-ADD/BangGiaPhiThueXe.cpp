@@ -17,12 +17,23 @@ BangGiaPhiThueXe::~BangGiaPhiThueXe()
 
 void BangGiaPhiThueXe::nhap()
 {
-	cout << "Nhap so phi thue xe can nhap vao danh sach: ";
+	cout << "Nhap so luong phi boc xep can nhap: ";
 	cin >> soLuong;
 	cin.ignore();
 	ds = new PhiThueXe[soLuong];
 	for (int i = 0; i < soLuong; i++)
 		ds[i].nhap();
+}
+
+void BangGiaPhiThueXe::nhap(DanhSachLoaiXe ds)
+{
+	ds.xuat();
+	cout << "Nhap so luong phi boc xep can nhap: ";
+	cin >> soLuong;
+	cin.ignore();
+	this->ds = new PhiThueXe[soLuong];
+	for (int i = 0; i < soLuong; i++)
+		this->ds[i].nhap(ds);
 }
 
 void BangGiaPhiThueXe::xuat() const

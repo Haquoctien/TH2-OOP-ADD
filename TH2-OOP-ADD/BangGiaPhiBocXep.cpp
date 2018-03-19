@@ -25,6 +25,17 @@ void BangGiaPhiBocXep::nhap()
 		ds[i].nhap();
 }
 
+void BangGiaPhiBocXep::nhap(DanhSachLoaiXe ds)
+{
+	ds.xuat();
+	cout << "Nhap so luong phi boc xep can nhap: ";
+	cin >> soLuong;
+	cin.ignore();
+	this->ds = new PhiBocXep[soLuong];
+	for (int i = 0; i < soLuong; i++)
+		this->ds[i].nhap(ds);
+}
+
 void BangGiaPhiBocXep::xuat() const
 {
 	cout << "Xuat danh sach phi boc xep: " << endl;

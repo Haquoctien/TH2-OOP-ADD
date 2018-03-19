@@ -1,6 +1,6 @@
 #pragma once
-#include "include.h"
 #include "PhiThueXe.h"
+#include "DanhSachLoaiXe.h"
 class BangGiaPhiThueXe
 {
 private:
@@ -10,6 +10,7 @@ public:
 	BangGiaPhiThueXe();
 	~BangGiaPhiThueXe();
 	void nhap();
+	void nhap(DanhSachLoaiXe ds);
 	void xuat() const;
 };
 

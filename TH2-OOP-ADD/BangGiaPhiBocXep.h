@@ -1,5 +1,6 @@
 #pragma once
 #include "PhiBocXep.h"
+#include "DanhSachLoaiXe.h"
 class BangGiaPhiBocXep
 {
 private:
@@ -9,6 +10,7 @@ public:
 	BangGiaPhiBocXep();
 	~BangGiaPhiBocXep();
 	void nhap();
+	void nhap(DanhSachLoaiXe ds);
 	void xuat() const;
 };
 
