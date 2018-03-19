@@ -35,7 +35,6 @@ void GiaTienTheoKhoangDuong::nhap()
 
 void GiaTienTheoKhoangDuong::xuat()
 {
-	cout << "Xuat gia tien theo quang duong voi dinh dang:\n\t km tu -> km den : gia" << endl;
 	for (int i = 0; i < soLuong; i++)
 		ds[i].xuat();
 }
