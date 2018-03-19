@@ -12,8 +12,6 @@ PhiThueXe::~PhiThueXe()
 PhiThueXe::PhiThueXe(const PhiThueXe &other)
 {
 	this->loaiXe = other.loaiXe;
-	this->tuKm = other.tuKm;
-	this->denKm = other.denKm;
 	this->gia = other.gia;
 }
 
@@ -41,23 +39,14 @@ void PhiThueXe::nhap(DanhSachLoaiXe ds)
 
 void PhiThueXe::xuat()
 {
-	cout << loaiXe;
+	cout << "Ten loai xe: " << loaiXe << endl;
+	cout << "Bang gia theo quang duong: " << endl;
 	gia.xuat();
 }
 
 string PhiThueXe::getLoaiXe() const
 {
 	return loaiXe;
-}
-
-int PhiThueXe::getTuKM() const
-{
-	return tuKm;
-}
-
-int PhiThueXe::getDenKm() const
-{
-	return denKm;
 }
 
 GiaTienTheoKhoangDuong PhiThueXe::getGia() const
