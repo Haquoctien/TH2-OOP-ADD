@@ -19,6 +19,9 @@ void PhiThueXe::nhap()
 {
 	cout << "Nhap loai xe: ";
 	getline(cin, loaiXe);
+	cout << "Nhap gia cho thue voi quang duong di <= km dau tien: <gia> <km dau tien>: ";
+	cin >> giaBanDau >> kmBanDau;
+	cin.ignore();
 	gia.nhap();
 }
 
@@ -34,13 +37,17 @@ void PhiThueXe::nhap(DanhSachLoaiXe ds)
 		flag++;
 	} while (!ds.isIn(loaiXe));
 	cout << "Nhap lan luot gia, tu km, den km";
+	cout << "Nhap gia cho thue voi quang duong di <= km dau tien: <gia> <km dau tien>: ";
+	cin >> giaBanDau >> kmBanDau;
+	cin.ignore();
 	gia.nhap();
 }
 
 void PhiThueXe::xuat()
 {
 	cout << "Ten loai xe: " << loaiXe << endl;
-	cout << "Bang gia theo quang duong: " << endl;
+	cout << "Gia cho thue voi quang duong <= " << kmBanDau << " km dau tien: " << giaBanDau << endl;
+	cout << "Bang gia theo quang duong con lai: " << endl;
 	gia.xuat();
 }
 

@@ -6,6 +6,8 @@ class PhiThueXe
 {
 private:
 	string loaiXe;
+	int giaBanDau;
+	int kmBanDau;
 	GiaTienTheoKhoangDuong gia;
 public:
 	PhiThueXe();
