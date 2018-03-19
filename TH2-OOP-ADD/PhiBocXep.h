@@ -1,4 +1,5 @@
 #include "include.h"
+#include "DanhSachLoaiXe.h"
 class PhiBocXep
 {
 private:
@@ -9,6 +10,7 @@ public:
 	~PhiBocXep();
 	PhiBocXep(const PhiBocXep&);
 	void nhap();
+	void nhap(DanhSachLoaiXe ds);
 	void xuat() const;
 	string getLoaiXe() const;
 	int getGiaTien() const;

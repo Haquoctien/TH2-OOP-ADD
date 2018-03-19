@@ -24,6 +24,23 @@ void PhiBocXep::nhap()
 	cin.ignore();
 }
 
+void PhiBocXep::nhap(DanhSachLoaiXe ds)
+{
+	ds.xuat();
+	int flag = 0;
+	do {
+		if (flag)
+			cout << "Loai xe khong ton tai trong danh sach, vui long nhap lai: ";
+		else
+			cout << "Nhap loai xe: ";
+		getline(cin, loaiXe);
+		flag++;
+	} while (!ds.isIn(loaiXe));
+	cout << "Nhap gia tien: ";
+	cin >> giaTien;
+	cin.ignore();
+}
+
 void PhiBocXep::xuat() const
 {
 	cout << "Xuat theo dinh dang:\n\tLoai xe, gia";
