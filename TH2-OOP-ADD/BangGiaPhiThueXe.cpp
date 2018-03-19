@@ -17,7 +17,7 @@ BangGiaPhiThueXe::~BangGiaPhiThueXe()
 
 void BangGiaPhiThueXe::nhap()
 {
-	cout << "Nhap so luong phi boc xep can nhap: ";
+	cout << "Nhap so luong phi thue xe can nhap: ";
 	cin >> soLuong;
 	cin.ignore();
 	ds = new PhiThueXe[soLuong];
@@ -28,7 +28,7 @@ void BangGiaPhiThueXe::nhap()
 void BangGiaPhiThueXe::nhap(DanhSachLoaiXe ds)
 {
 	ds.xuat();
-	cout << "Nhap so luong phi boc xep can nhap: ";
+	cout << "Nhap so luong phi thue xe can nhap: ";
 	cin >> soLuong;
 	cin.ignore();
 	this->ds = new PhiThueXe[soLuong];
