@@ -28,7 +28,6 @@ void PhiThueXe::nhap()
 
 void PhiThueXe::nhap(DanhSachLoaiXe ds)
 {
-	ds.xuat();
 	int flag = 0;
 	do {
 		if (flag)

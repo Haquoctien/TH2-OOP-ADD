@@ -26,7 +26,6 @@ void PhiBocXep::nhap()
 
 void PhiBocXep::nhap(DanhSachLoaiXe ds)
 {
-	ds.xuat();
 	int flag = 0;
 	do {
 		if (flag)
